@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Banking API - Money Transfer</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    {% load static %}
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/styles.css' %}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="column">
+        <h2>Customers</h2>
+        <ul id="customersList">
+          <!-- Customer list will be populated here -->
+        </ul>
+      </div>
+      <div class="column">
+        <h2>Bank Accounts</h2>
+        <ul id="bankAccountsList">
+          <!-- Bank accounts list will be populated here -->
+        </ul>
+      </div>
+      <div class="column">
+        <h2>Transaction Process</h2>
+        <form id="transferForm">
+          <label for="sourceAccount">Source Account Number:</label>
+          <select id="sourceAccount" name="sourceAccount" required>
+            <!-- Source accounts will be populated here -->
+          </select>
+          <br /><br />
+
+          <label for="destinationAccount">Destination Account Number:</label>
+          <select id="destinationAccount" name="destinationAccount" required>
+            <!-- Destination accounts will be populated here -->
+          </select>
+          <br /><br />
+
+          <label for="amount">Transfer Amount:</label>
+          <input
+            type="number"
+            id="amount"
+            name="amount"
+            min="0"
+            step="0.01"
+            required
+          />
+          <br /><br />
+
+          <input type="submit" value="Transfer" />
+        </form>
+        <div id="messageContainer">
+          <p id="message"></p>
+          <i id="icon"></i>
+        </div>
+      </div>
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>

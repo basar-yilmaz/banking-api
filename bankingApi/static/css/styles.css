@@ -1,0 +1,100 @@
+body {
+  font-family: "Roboto", Arial, sans-serif; /* Updated font-family */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+h2 {
+  color: #337ab7;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+form {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+input[type="submit"] {
+  background-color: #337ab7;
+  color: white;
+  cursor: pointer;
+}
+
+#messageContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+#icon {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+/* Additional styles for improved layout */
+.sub-columns {
+  display: flex;
+}
+
+.sub-column {
+  flex: 1;
+  border-right: 1px solid green; /* Adding green border line between sub-columns */
+  padding-right: 10px; /* Adding some padding for better readability */
+}
+
+/* Add custom styles to create subcolumns */
+.sub-columns {
+  display: flex;
+}
+
+.sub-column {
+  flex: 1;
+  padding: 5px;
+}
+
+/* Custom styling for success and error messages */
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
